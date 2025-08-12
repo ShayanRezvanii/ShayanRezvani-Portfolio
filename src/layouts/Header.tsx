@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import MoonIcon from "../assets/Icons/Moon.svg?react";
-import SunIcon from "../assets/Icons/Sun.svg?react";
+import SunIcon from "../assets/Icons/sun.svg";
 
 function Header() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
