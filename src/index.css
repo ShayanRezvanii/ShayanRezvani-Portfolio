@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./assets/Fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* #root {
+  background-color: #f2f5f9;
+} */
+
+body {
+  font-family: "Quicksand", sans-;
+}
