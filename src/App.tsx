@@ -5,8 +5,6 @@ import Header from "./layouts/Header";
 import Main from "./layouts/Main";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Container>
       <Header />

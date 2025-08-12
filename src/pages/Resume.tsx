@@ -1,7 +1,5 @@
-import React from "react";
 import FeatureCard from "../shared/ui/Card/FeatureCard";
 import BagIcon from "../assets/Icons/Bag.svg?react";
-import EducationIcon from "../assets/Icons/Education.svg?react";
 
 const cardsRow1 = [
   {

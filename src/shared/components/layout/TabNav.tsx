@@ -1,4 +1,3 @@
-// src/shared/components/layout/TopTabs.tsx
 import { NavLink } from "react-router-dom";
 import HomeIcon from "../../../assets/Icons/Home.svg?react";
 import ResumeIcon from "../../../assets/Icons/Resume.svg?react";

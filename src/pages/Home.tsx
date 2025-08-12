@@ -1,4 +1,3 @@
-import React from "react";
 import FeatureCard from "../shared/ui/Card/FeatureCard";
 
 const cardsRow1 = [
