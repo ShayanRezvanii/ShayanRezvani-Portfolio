@@ -16,22 +16,22 @@ const cardsRow1 = [
   },
 ];
 
-const cardsRow2 = [
-  {
-    title: "Backend Services",
-    description:
-      "APIs with Node.js/NestJS, authentication, real-time sockets, and robust CI/CD pipelines for reliable deployments.",
-    bg: "#F2F7FC",
-    height: 169,
-  },
-  {
-    title: "UI/UX & Performance",
-    description:
-      "Design systems, accessibility, and performance tuning (Core Web Vitals). I love shipping snappy interfaces.",
-    bg: "#FFEBD1",
-    height: 169,
-  },
-];
+// const cardsRow2 = [
+//   {
+//     title: "Backend Services",
+//     description:
+//       "APIs with Node.js/NestJS, authentication, real-time sockets, and robust CI/CD pipelines for reliable deployments.",
+//     bg: "#F2F7FC",
+//     height: 169,
+//   },
+//   {
+//     title: "UI/UX & Performance",
+//     description:
+//       "Design systems, accessibility, and performance tuning (Core Web Vitals). I love shipping snappy interfaces.",
+//     bg: "#FFEBD1",
+//     height: 169,
+//   },
+// ];
 
 function Resume() {
   return (
