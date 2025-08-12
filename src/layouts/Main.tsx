@@ -43,7 +43,7 @@ export default function Main() {
         <TabNav onClicked={() => setTabClicked(true)} />
         <div ref={outletTopRef} />
 
-        <div className="flex-1 bg-white dark:bg-gray-800 min-h-[695px] lg:max-h-[695px] rounded-[20px] p-6 overflow-hidden">
+        <div className="flex-1 bg-white dark:bg-gray-800 min-h-[688px] lg:max-h-[688px] rounded-[20px] p-6 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={location.pathname}
