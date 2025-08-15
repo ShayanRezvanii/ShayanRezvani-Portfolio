@@ -23,7 +23,7 @@ function SideBar() {
               Shayan Rezvani
             </h1>
             <span className=" font-light text-neutral-400">
-              FrontEnd Developer
+              FullStack Developer
             </span>
           </div>
           <div>

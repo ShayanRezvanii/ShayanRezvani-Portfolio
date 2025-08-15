@@ -4,7 +4,7 @@ import BagIcon from "../assets/Icons/Bag.svg?react";
 const cardsRow1 = [
   {
     title: "Tushehbar Shipping",
-    description: "Web Developer",
+    description: "FullStack Developer",
     bg: "#FFEBD1 ",
     height: 169,
   },
