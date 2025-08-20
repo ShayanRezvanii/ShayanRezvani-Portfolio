@@ -14,7 +14,7 @@ const cardsRow1 = [
     description:
       "Implemented frontend architecture and optimized user flows for an online ticketing platform using React and Next.js.",
     bg: "#F2F7FC",
-    link: "https://funicket.ir",
+    link: "https://funicket-landing-a3fy.vercel.app/",
     height: 169,
   },
 ];
