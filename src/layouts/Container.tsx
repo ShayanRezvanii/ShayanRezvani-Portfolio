@@ -5,9 +5,9 @@ interface ContainerType {
 }
 function Container({ children }: ContainerType) {
   return (
-    <div className="w-full min-h-screen font-quicksand  bg-[#F2F5F9] dark:bg-gray-900 overflow-x-hidden sm:overflow-x-auto  max-w-[1440px] py-4 mx-auto">
-      {children}
-    </div>
+    <main className="w-full font-quicksand px-3 sm:px-5">
+      <div className="max-w-[1180px] mx-auto">{children}</div>
+    </main>
   );
 }
 

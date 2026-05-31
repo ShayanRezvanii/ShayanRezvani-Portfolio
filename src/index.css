@@ -7,12 +7,56 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("./assets/Fonts/Quicksand-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./assets/Fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-/* #root {
-  background-color: #f2f5f9;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: "Quicksand", sans-;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(135deg, #f3f0ff 0%, #f2f5f9 45%, #e6fffa 100%);
+  min-height: 100vh;
+}
+
+[data-theme="dark"] body {
+  background: linear-gradient(135deg, #1e1b2e 0%, #111827 50%, #0f2027 100%);
+}
+
+/* offset anchored sections so the sticky navbar doesn't cover them */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+/* Thin, branded scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #10b981, #0d9488);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #059669, #0f766e);
 }
