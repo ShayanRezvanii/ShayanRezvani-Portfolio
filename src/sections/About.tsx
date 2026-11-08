@@ -30,7 +30,7 @@ const experience = [
 
 const facts = [
   { label: "Experience", value: "3+ Years" },
-  { label: "Projects", value: "5+ Shipped" },
+  { label: "Projects", value: "8+ Shipped" },
   { label: "Based in", value: "Tehran, Iran" },
 ];
 

@@ -54,6 +54,7 @@ export default function ProjectDetail() {
             title={project.title}
             gradientFrom={project.gradientFrom}
             gradientTo={project.gradientTo}
+            icon={project.icon}
           />
         </div>
 
@@ -153,6 +154,7 @@ export default function ProjectDetail() {
                   title={p.title}
                   gradientFrom={p.gradientFrom}
                   gradientTo={p.gradientTo}
+                  icon={p.icon}
                 />
               </div>
               <div className="p-4 flex items-center justify-between">

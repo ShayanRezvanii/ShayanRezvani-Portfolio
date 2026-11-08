@@ -1,3 +1,12 @@
+import icon3engine from "../assets/projects/3engine.png";
+import iconFunicket from "../assets/projects/funicket.png";
+import iconKeyhanrah from "../assets/projects/keyhanrah.png";
+import iconPortfolio from "../assets/projects/portfolio.png";
+import iconSofragol from "../assets/projects/sofragol.png";
+import iconTamnama from "../assets/projects/tamnama.png";
+import iconTushehbarDashboard from "../assets/projects/tushehbar-dashboard.png";
+import iconTushehbar from "../assets/projects/tushehbar.png";
+
 export type ProjectCategory = "Frontend" | "Full-Stack" | "WordPress";
 
 export interface Project {
@@ -17,33 +26,14 @@ export interface Project {
   gradientFrom: string;
   gradientTo: string;
   initials: string;
+  /** Brand / favicon icon for the project */
+  icon: string;
 }
 
 export const projects: Project[] = [
   {
-    slug: "3engine",
-    title: "3engine.io",
-    role: "Frontend Developer",
-    category: "Frontend",
-    year: "2023",
-    tagline: "Interactive frontend for a 3D engine platform.",
-    description:
-      "I built responsive, interactive UI components for 3engine.io — a platform around a real-time 3D engine. The work focused on translating complex product ideas into a clean, fast, and intuitive web experience using React and Next.js.",
-    features: [
-      "Pixel-perfect, responsive layouts from design specs",
-      "Reusable component library for consistent UI",
-      "Smooth animations and interactive sections",
-      "Performance tuning for fast initial load",
-    ],
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://3engine.io",
-    gradientFrom: "#6366F1",
-    gradientTo: "#8B5CF6",
-    initials: "3E",
-  },
-  {
     slug: "funicket",
-    title: "Funicket.ir",
+    title: "Funicket",
     role: "Frontend Developer",
     category: "Frontend",
     year: "2023",
@@ -57,10 +47,55 @@ export const projects: Project[] = [
       "Clean, conversion-focused landing experience",
     ],
     tech: ["React", "Next.js", "Tailwind CSS"],
-    link: "https://funicket-landing-a3fy.vercel.app/",
+    link: "https://funicket.ir/",
     gradientFrom: "#EC4899",
     gradientTo: "#F43F5E",
     initials: "FK",
+    icon: iconFunicket,
+  },
+  {
+    slug: "keyhanrah",
+    title: "Keyhan Rah",
+    role: "Frontend Developer",
+    category: "Frontend",
+    year: "2024",
+    tagline: "Flight inquiry platform for domestic & international trips.",
+    description:
+      "Keyhan Rah is a flight inquiry service for domestic and international routes. I built the frontend experience for submitting requests and following up with 24/7 support, focusing on a clear RTL layout and a fast request flow.",
+    features: [
+      "Flight inquiry request forms for domestic & international routes",
+      "RTL-friendly, mobile-first interface",
+      "Clear status and support-oriented UX",
+      "Performance-focused landing and request pages",
+    ],
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    link: "https://keyhanrah.com/",
+    gradientFrom: "#0EA5E9",
+    gradientTo: "#1D4ED8",
+    initials: "KR",
+    icon: iconKeyhanrah,
+  },
+  {
+    slug: "sofragol",
+    title: "Sofragol",
+    role: "WordPress Developer",
+    category: "WordPress",
+    year: "2024",
+    tagline: "Restaurant website for Sofragol dining brand.",
+    description:
+      "Sofragol is the public website for a restaurant brand. I developed the site with a focus on atmosphere, menu discovery, and a clean mobile experience that matches the brand identity.",
+    features: [
+      "Brand-led restaurant website",
+      "Menu and content sections optimized for mobile",
+      "Performance & SEO-minded WordPress setup",
+      "Custom theme tweaks aligned with brand visuals",
+    ],
+    tech: ["WordPress", "PHP", "Elementor"],
+    link: "https://sofragol.com/",
+    gradientFrom: "#E11D48",
+    gradientTo: "#F97316",
+    initials: "SG",
+    icon: iconSofragol,
   },
   {
     slug: "tamnama",
@@ -70,7 +105,7 @@ export const projects: Project[] = [
     year: "2024",
     tagline: "Full-stack digital restaurant menu with live admin panel.",
     description:
-      "Tamnama is a full-stack digital menu app for restaurants and cafés. I built the React frontend and a Node.js + Express backend, including an admin panel for managing items and categories with real-time updates pushed to customers.",
+      "Tamnama is a full-stack digital menu app for restaurants and cafés. I built the React frontend and a Node.js + Express backend, including an admin panel for managing items and categories with real-time updates pushed to customers. The Sofragol instance is live in production.",
     features: [
       "Customer-facing digital menu with categories",
       "Admin panel to manage items, prices & images",
@@ -79,52 +114,99 @@ export const projects: Project[] = [
       "MongoDB data layer",
     ],
     tech: ["React", "Node.js", "Express", "Socket.io", "MongoDB"],
-    link: "https://tamnama.nsjsoft.ir/t-cafe",
+    link: "https://tamnama.nsjsoft.ir/sofragol",
     gradientFrom: "#16A34A",
     gradientTo: "#0D9488",
     initials: "TM",
+    icon: iconTamnama,
   },
   {
-    slug: "tushehbar-app",
-    title: "Tushehbar Shipping App",
+    slug: "tushehbar-dashboard",
+    title: "Tushehbar Dashboard",
     role: "Frontend Developer",
     category: "Frontend",
     year: "2023",
-    tagline: "Cargo management dashboard for a shipping company.",
+    tagline: "Internal messaging and cargo operations dashboard.",
     description:
-      "A web application for Tushehbar to manage client requests and track cargo operations. I developed the frontend, building data-heavy dashboards and forms that keep the shipping workflow fast and organized.",
+      "A web application for Tushehbar to manage client requests, internal messaging, and cargo operations. I developed the frontend, building data-heavy dashboards and forms that keep the shipping workflow fast and organized.",
     features: [
       "Operations dashboard for cargo tracking",
-      "Client request management screens",
+      "Internal messaging and management screens",
       "Data tables, filters and forms",
       "Responsive, role-based interface",
     ],
     tech: ["React", "TypeScript", "Tailwind CSS"],
-    link: "https://app.tushehbar.com",
+    link: "https://dashboard.tushehbar.com/",
     gradientFrom: "#0EA5E9",
     gradientTo: "#2563EB",
-    initials: "TB",
+    initials: "TD",
+    icon: iconTushehbarDashboard,
   },
   {
-    slug: "tushehbar-wordpress",
+    slug: "portfolio",
+    title: "Personal Portfolio",
+    role: "Frontend Developer",
+    category: "Frontend",
+    year: "2023",
+    tagline: "Earlier personal portfolio site hosted on Netlify.",
+    description:
+      "My previous personal portfolio, built to introduce my work, skills, and contact details. It was a lightweight frontend project focused on clean presentation and fast load times.",
+    features: [
+      "Personal branding and project showcase",
+      "Responsive layout across devices",
+      "Fast static hosting on Netlify",
+      "Clean, developer-focused presentation",
+    ],
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://shayanrezvani.netlify.app/",
+    gradientFrom: "#334155",
+    gradientTo: "#0F172A",
+    initials: "SR",
+    icon: iconPortfolio,
+  },
+  {
+    slug: "3engine",
+    title: "3engine.io",
+    role: "Frontend Developer",
+    category: "Frontend",
+    year: "2023",
+    tagline: "No-code Web3 game engine platform frontend.",
+    description:
+      "I built responsive, interactive UI components for 3engine.io — a no-code platform for 2D/3D Web3 game creation. The work focused on translating complex product ideas into a clean, fast, and intuitive web experience using React and Next.js.",
+    features: [
+      "Pixel-perfect, responsive layouts from design specs",
+      "Reusable component library for consistent UI",
+      "Smooth animations and interactive sections",
+      "Performance tuning for fast initial load",
+    ],
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    link: "https://3engine.io/",
+    gradientFrom: "#2563EB",
+    gradientTo: "#1D4ED8",
+    initials: "3E",
+    icon: icon3engine,
+  },
+  {
+    slug: "tushehbar",
     title: "Tushehbar Website",
     role: "WordPress Developer",
     category: "WordPress",
     year: "2022",
-    tagline: "Multi-language corporate & e-commerce WordPress sites.",
+    tagline: "Corporate shipping company website for Tushehbar.",
     description:
-      "I designed and developed multi-language e-commerce and corporate WordPress websites for Tushehbar, optimized for performance, SEO and usability across languages.",
+      "I designed and developed the corporate website for Tushehbar shipping company, optimized for performance, SEO and usability, with clear presentation of services and company information.",
     features: [
-      "Multi-language (RTL & LTR) setup",
-      "E-commerce with WooCommerce",
+      "Corporate shipping company presence",
       "Performance & SEO optimization",
       "Custom theme tweaks and content management",
+      "Responsive layout for all devices",
     ],
     tech: ["WordPress", "WooCommerce", "PHP", "Elementor"],
-    link: "https://tushehbar.com",
+    link: "https://tushehbar.com/",
     gradientFrom: "#F97316",
     gradientTo: "#EC1B09",
-    initials: "WP",
+    initials: "TB",
+    icon: iconTushehbar,
   },
 ];
 

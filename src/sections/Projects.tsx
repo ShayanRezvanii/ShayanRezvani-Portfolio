@@ -66,6 +66,7 @@ export default function Projects() {
                     title={p.title}
                     gradientFrom={p.gradientFrom}
                     gradientTo={p.gradientTo}
+                    icon={p.icon}
                   />
                   <span className="absolute top-3 left-3 text-xs font-bold text-white px-2.5 py-1 rounded-full bg-black/40 backdrop-blur-sm">
                     {p.category}
